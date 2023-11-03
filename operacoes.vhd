@@ -15,36 +15,7 @@
 -- Revision: 
 -- Revision 0.01 - File Created
 -- Additional Comments: 
---
--------------------------------------------------------------------------------------------------------
---         (A0..A3)  (B0..B3)         Sel2  Sel1  Sel0 | Operação
---          _______  _______          ----------------------------
---          \      \/      /            0     0     0  |  A + B
---  [s0..s2] \            /             0     0     1  |  A - B (Complemento de 2)
---            \__________/              0     1     0  |  Incremento +1
---              (00..03)                0     1     1  |  Troca de Sinal
---                                      1     0     0  |  Contador de bits ativos
---                                      1     0     1  |  Inverter bits
---                                      1     1     0  |  Par(0) ou ímpar (1)
---                                      1     1     1  |  Comparador (0001- Igual/0010- A>B/0011 - B>A)
-
--- Operações de 1 número utilizam a entrada A
---Saída S e quatro flags (Zero, negativo, carry out, overflow)
-
---O trabalho deve ter 3 chaves externas (switchers)*
-
---Decidir as outras quatro operações da ALU*
-
---Funcionamento:
---Os operandos de entrada são gerados por um módulo auxiliar que conterá um contator que
---percorrerá todos os binários representados por 4 bits. As entradas são mostradas simultaneamente
---nos LEDs. Em seguida, a ALU recebe os operandos e produz o resultado também mostrado no display
---de 7 segmentos. Além disso, a ALU gera 4 flags que são mostradas nos LEDs.
---As entradas da operacoes são geradas por um módulo auxiliar, um contador, parte integrante do projeto.
---As duas entradas são mostradas, juntamente com o resultado, nos displays de 7 segmentos
---disponíveis. Os LEDs são utilizados para mostrar os quatro "flags". Os operandos vão mudando, em
---ordem crescente, a cada 2 segundos.
---------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
