@@ -48,7 +48,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use ieee.std_logic_arith.all;
 
 entity ULA is
-generic(t_max : integer := 40000000);
+generic(t_max : integer := 100000000);
     Port ( clk : in  STD_LOGIC; --Clock
 			  slt : in STD_LOGIC_VECTOR(2 downto 0);--Seletor
            --SaidaA,SaidaB : out STD_LOGIC_VECTOR(3 downto 0);
